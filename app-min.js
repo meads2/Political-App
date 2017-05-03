@@ -1,7 +1,7 @@
 var App = {
   init: function(){
     App.config = {
-      api_url: 'https://congress.api.sunlightfoundation.com/legislators/locate?zip='
+      api_url: 'https://cors-anywhere.herokuapp.com/' + 'https://congress.api.sunlightfoundation.com/legislators/locate?zip='
     }
     // Setup App
     this.domCache();
@@ -83,7 +83,7 @@ var App = {
       console.log('Not A Zip...');
       this.$errMsg.show();
     }
-    
+
   }
 };
 
