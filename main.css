@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #f5f5f5;
+  font-family: 'Roboto', sans-serif; }
+
+.flag {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -35px;
+  height: 64px;
+  width: 160px;
+  overflow: hidden; }
+  .flag .red, .flag .white, .flag .blue {
+    position: absolute;
+    top: -100;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.2); }
+  .flag .red {
+    background: #ed2539;
+    z-index: 5;
+    transform: rotate(15deg);
+    top: -30px;
+    left: -40px; }
+  .flag .white {
+    background: #fff;
+    z-index: 4;
+    left: -20px;
+    top: -30px;
+    transform: rotate(15deg); }
+  .flag .blue {
+    background: #356bff;
+    z-index: 3;
+    left: 20px;
+    transform: rotate(15deg);
+    top: -30px;
+    left: 0px; }
+
+.navbar {
+  background: #fff;
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  postion: relative; }
+
+.form-group {
+  position: relative; }
+  .form-group input {
+    height: 32px;
+    width: 300px;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 0 16px;
+    color: #2e3038; }
+    .form-group input:focus {
+      outline: none; }
+  .form-group a {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    font-size: 16px;
+    color: #a5a7af; }
+
+ul {
+  width: 600px;
+  margin: 64px auto; }
+
+.rep, .demo {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  margin-bottom: 16px;
+  padding: 0 40px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #353742;
+  font-weight: 400; }
+
+.demo {
+  height: 340px;
+  padding: 0;
+  flex-direction: row;
+  background: rgba(237, 37, 57, 0.9); }
+
+.btn-group {
+  height: 48px; }
+
+.bg {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("http://static.thousandwonders.net/United.States.Capitol.original.4709.jpg");
+  background-size: 600px 340px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  filter: grayscale(100%);
+  opacity: .15; }
+
+.content {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  padding: 48px;
+  line-height: 24px;
+  color: #fff; }
+  .content h1 {
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    letter-spacing: -.3px; }
+  .content p {
+    columns: 2;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); }
+  .content .btn-group {
+    margin-top: 32px; }
+    .content .btn-group a {
+      padding: 12px 32px;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 4px;
+      line-height: 48px; }
+    .content .btn-group .one {
+      background: #fff;
+      color: #333; }
+      .content .btn-group .one:hover {
+        background: #eee;
+        cursor: pointer; }
+    .content .btn-group .two {
+      border: 1px solid #fff;
+      color: #fff;
+      margin-left: 16px; }
+      .content .btn-group .two i {
+        margin-right: 8px; }
+      .content .btn-group .two:hover {
+        background: #fff;
+        color: #333; }
+
+.r, .b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 6px;
+  height: 60px; }
+
+.r {
+  background: rgba(255, 0, 0, 0.6); }
+
+.b {
+  background: rgba(0, 0, 255, 0.6); }
+
+.social {
+  display: flex;
+  width: 40px;
+  justify-content: space-between; }
+  .social a {
+    color: #b3b5bf;
+    font-size: 18px; }
+    .social a:hover {
+      cursor: pointer; }
+  .social .fb:hover {
+    color: #3b5199; }
+  .social .twitter:hover {
+    color: #46a7fc; }
+
+.error {
+  display: none;
+  width: 600px;
+  background: rgba(237, 37, 57, 0.3);
+  margin: 80px auto 0 auto;
+  padding: 40px;
+  border-radius: 2px;
+  border: 1px solid #ed2539;
+  color: #ed2539;
+  text-align: center; }
+  .error h1 {
+    font-size: 24px;
+    line-height: 24px; }

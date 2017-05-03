@@ -1,0 +1,188 @@
+*
+  box-sizing: border-box
+body
+  background: #f5f5f5
+  font-family: 'Roboto', sans-serif
+
+.flag
+  position: absolute
+  z-index: 1
+  top: 0
+  left: -35px
+  height: 64px
+  width: 160px
+  overflow: hidden
+  .red,.white,.blue
+    position: absolute
+    top: -100
+    width: 100px
+    height: 100px
+    box-shadow: 2px 1px 4px rgba(black,.2)
+  .red
+    background: #ed2539
+    z-index: 5
+    transform: rotate(15deg)
+    top: -30px
+    left: -40px
+  .white
+    background: #fff
+    z-index: 4
+    left: -20px
+    top: -30px
+    transform: rotate(15deg)
+  .blue
+    background: #356bff
+    z-index: 3
+    left: 20px
+    transform: rotate(15deg)
+    top: -30px
+    left: 0px
+.navbar
+  background: #fff
+  height: 64px
+  width: 100%
+  border-bottom: 1px solid rgba(black, .1)
+  display: flex
+  align-items: center
+  justify-content: center
+  postion: relative
+.form-group
+  position: relative
+  input
+    height: 32px
+    width: 300px
+    font-size: 17px
+    font-weight: 400
+    border-radius: 2px
+    border: 1px solid rgba(black, .14)
+    padding: 0 16px
+    color: #2e3038
+    &:focus
+      outline: none
+  a
+    position: absolute
+    top: 8px
+    right: 12px
+    font-size: 16px
+    color: #a5a7af
+
+ul
+  width: 600px
+  margin: 64px auto
+
+.rep,.demo
+  width: 100%
+  height: 60px
+  position: relative
+  margin-bottom: 16px
+  padding: 0 40px
+  background: #fff
+  box-shadow: 0 2px 8px rgba(black,.1)
+  border-radius: 1px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  color: #353742
+  font-weight: 400
+
+.demo
+  height: 340px
+  padding: 0
+  flex-direction: row
+  background: rgba(#ed2539,.9)
+.btn-group
+  height: 48px
+.bg
+  z-index: 1
+  width: 100%
+  height: 100%
+  background-image: url('http://static.thousandwonders.net/United.States.Capitol.original.4709.jpg')
+  background-size: 600px 340px
+  background-repeat: no-repeat
+  background-position: bottom center
+  filter: grayscale(100%)
+  opacity: .15
+.content
+  height: 100%
+  width: 100%
+  position: absolute
+  z-index: 3
+  padding: 48px
+  line-height: 24px
+  color: #fff
+  h1
+    font-size: 34px
+    line-height: 48px
+    margin-bottom: 24px
+    text-shadow: 0 2px 2px rgba(black,.1)
+    letter-spacing: -.3px
+  p
+    columns: 2
+    font-size: 16px
+    line-height: 24px
+    font-weight: 300
+    text-shadow: 0 2px 2px rgba(black,.2)
+  .btn-group
+    margin-top: 32px
+    a
+      padding: 12px 32px
+      text-decoration: none
+      font-size: 16px
+      border-radius: 4px
+      line-height: 48px
+    .one
+      background: #fff
+      color: #333
+      &:hover
+        background: #eee
+        cursor: pointer
+    .two
+      border: 1px solid #fff
+      color: #fff
+      margin-left: 16px
+      i
+        margin-right: 8px
+      &:hover
+        background: #fff
+        color: #333
+
+.r,.b
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  width: 6px
+  height: 60px
+.r
+  background: rgba(red,.6)
+.b
+  background: rgba(blue,.6)
+.social
+  display: flex
+  width: 40px
+  justify-content: space-between
+  a
+    color: #b3b5bf
+    font-size: 18px
+    &:hover
+      cursor: pointer
+  .fb
+    &:hover
+      color: #3b5199
+  .twitter
+    &:hover
+      color: #46a7fc
+
+.error
+  display: none
+  width: 600px
+  background: rgba(#ed2539,.3)
+  margin: 80px auto 0 auto
+  padding: 40px
+  border-radius: 2px
+  border: 1px solid #ed2539
+  color: #ed2539
+  text-align: center
+  h1
+    font-size: 24px
+    line-height: 24px

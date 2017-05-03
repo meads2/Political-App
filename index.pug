@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    link(rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+    link(rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css")
+    link(rel='stylesheet' href="main.css")
+  body
+    // Navbar
+    .navbar#navbar
+      .flag
+        .red
+        .white
+        .blue
+      .form-group
+        input(type="text" placeholder='Enter A Zip')
+        a.ion-ios-search(href="#")
+          
+    // Error Message For Not A Zip Code
+    .error
+      h1 Ooops, Lets try that again!
+      p Please Enter a 5-Digit Zip Code
+      
+    // List Items
+    ul#reps
+      // How To Use
+      li.demo
+        .bg
+        .content
+          h1 Get Started
+          p Every American should know who is representing them in congress. Finding this information can be hard, and it shouldn't be. This app makes it dead simple to find your congress members. Don't Believe me? Enter your zip code above to find out!
+          .btn-group
+            a.one(href="https://www.senate.gov/senators/contact/") Learn More
+            a.two(href="#")
+              i.ion-social-github
+              span Github
+          
+      // Republican Rep
+      li.rep
+        .b
+        .name Democratic Representative
+        .social
+          a.ion-social-facebook.fb(href="#")
+          a.ion-social-twitter.twitter(href="#")
+            
+      // Democrat Rep
+      li.rep
+        .r
+        .name Republican Representative
+        .social
+          a.ion-social-facebook.fb(href="#")
+          a.ion-social-twitter.twitter(href="#")
+        
+
+
+    //- JS
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    //- Import JS
+    script(src='app.js')
+        
