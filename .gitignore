@@ -1,2 +1,5 @@
-config.codekit3
+.config.codekit3
 .DS_Store
+app-min.js
+main.css
+index.html
